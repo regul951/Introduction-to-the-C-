@@ -20,7 +20,7 @@ int CountMoreZero(string numbers)
     return count; //Вывод значения счетчика
 }
 
-Console.WriteLine("Решение Задачи 41.\nПользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0\nввёл пользователь.\n");
+Console.WriteLine("Решение Задачи 41.\n");
 Console.Write("Введите числа, через запятую: ");
 string? numbers = Console.ReadLine();
 Console.WriteLine(CountMoreZero(numbers));
