@@ -54,7 +54,7 @@ void prntArray(int[] ar)
     foreach (var num in ar)
     {
         
-        Console.WriteLine(num);
+        Console.Write($"{num}\t");
     }
 }
 
