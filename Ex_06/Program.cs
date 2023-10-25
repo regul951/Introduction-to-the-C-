@@ -35,16 +35,16 @@ Console.WriteLine(CountMoreZero(numbers));
 
 string CrossLine(double b1, double k1, double b2, double k2)
 {
-    if (k1 == k2)
+    if (k1 == k2) //Проверка на параллельность
     {
-        if (b1 == b2)
+        if (b1 == b2) //Проверка на совпадение
         {
             return "Прямые совпадают!";
         }
         return "Прямые параллельны!";
     }
-    double x = (b2 - b1) / (k1 - k2);
-    double y = (k1 * b2 - k2 * b1) / (k1 - k2);
+    double x = (b2 - b1) / (k1 - k2); //Вычисление координаты x
+    double y = (k1 * b2 - k2 * b1) / (k1 - k2); //Вычисление координаты y
     return $"Точка пересечения: ({x};{y})";
 }
 
