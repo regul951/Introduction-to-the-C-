@@ -3,27 +3,27 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-// int CountMoreZero(string numbers)
-// {
-//     string[] splitString = numbers.Split(','); //Разделяем введенную строку по запятой
-//     int[] array = new int[splitString.Length]; //Объявляем массив
-//     int count = 0; //Объявление счетчика с присваиванием ему нулевого значения
+int CountMoreZero(string numbers)
+{
+    string[] splitString = numbers.Split(','); //Разделяем введенную строку по запятой
+    int[] array = new int[splitString.Length]; //Объявляем массив
+    int count = 0; //Объявление счетчика с присваиванием ему нулевого значения
 
-//     //Цикл преобразования string в int и подсчет значений > 0
-//     for (int i = 0; i < splitString.Length; i++)
-//     {
-//         if (Convert.ToInt32(splitString[i]) > 0) //Конвертация строки в число с одновременным поиском числа > 0
-//         {
-//             count++; //Увеличение счетчика, в случае числа > 0
-//         }
-//     }
-//     return count; //Вывод значения счетчика
-// }
+    //Цикл преобразования string в int и подсчет значений > 0
+    for (int i = 0; i < splitString.Length; i++)
+    {
+        if (Convert.ToInt32(splitString[i]) > 0) //Конвертация строки в число с одновременным поиском числа > 0
+        {
+            count++; //Увеличение счетчика, в случае числа > 0
+        }
+    }
+    return count; //Вывод значения счетчика
+}
 
-// Console.WriteLine("Решение Задачи 41.\nПользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0\nввёл пользователь.\n");
-// Console.Write("Введите числа, через запятую: ");
-// string? numbers = Console.ReadLine();
-// Console.WriteLine(CountMoreZero(numbers));
+Console.WriteLine("Решение Задачи 41.\nПользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0\nввёл пользователь.\n");
+Console.Write("Введите числа, через запятую: ");
+string? numbers = Console.ReadLine();
+Console.WriteLine(CountMoreZero(numbers));
 
 
 
